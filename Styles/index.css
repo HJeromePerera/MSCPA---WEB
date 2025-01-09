@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+  justify-content: space-around;
+}
+
+.header-div-1 {
+  width: 10%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 30%;
+  padding-right: 10%;
+  filter: invert(1);
+}
+
+.header-div-2 {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-link {
+  padding-left: 3%;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: grey;
+}
+
+.header-link:hover {
+  color: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  filter: drop-shadow(rgb(255, 255, 255) 0pt 0pt 10pt);
+}
