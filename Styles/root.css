@@ -125,6 +125,11 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Arcane Nine";
+  src: url("./../Public/Arcane Nine.otf") format("opentype");
+}
+
 /* COLOR CONFIGURATION */
 /* Colors {
   #400000,

@@ -51,28 +51,29 @@ header {
   font-family: "Arcane Nine";
 }
 
-.header-link-luminora:hover {
-  background: linear-gradient(90deg, #9c8200, #ffd700, #b49902, #f6edbe);
-  font-weight: 500;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  filter: drop-shadow(#ffd700 0pt 0pt 10pt);
-}
-
 .name {
   letter-spacing: 1px;
-  animation: nameAnim 10s ease-in-out infinite;
 }
 
-@keyframes nameAnim {
-  0% {
-    filter: drop-shadow(rgba(255, 255, 255, 0.585) 0pt 0pt 20pt);
-  }
-  50% {
-    filter: drop-shadow(rgba(83, 83, 83, 0.286) 0pt 0pt 10pt);
-  }
-  100% {
-    filter: drop-shadow(rgba(255, 255, 255, 0.627) 0pt 0pt 20pt);
-  }
+section {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5%;
+}
+
+.event-name {
+  font-family: "Arcane Nine";
+  font-size: 6rem;
+  filter: drop-shadow(#ffd700 0pt 0pt 90pt);
+
+  background-color: #2f8d46;
+  background-image: url("./../Public/Gold Texture.jpg");
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
