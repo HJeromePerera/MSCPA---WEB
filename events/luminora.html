@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./../Styles/particles.scss" />
     <link rel="stylesheet" href="./../Styles/root.css" />
     <link rel="stylesheet" href="./../Styles/luminora.css" />
     <link rel="stylesheet" href="./Public/Arcane Nine.otf" />
@@ -22,13 +23,233 @@
       </div>
       <div class="header-div header-div-2 flex-row poppins-light">
         <a href="#about" class="header-link">About</a>
-        <a href="#" class="header-link">News</a>
+        <a href="#" class="header-link">Sponsors</a>
         <a href="#" class="header-link">Feedback </a>
-        <a href="#" class="header-link"></a>
+        <a href="#" class="header-link">Map</a>
       </div>
     </header>
-    <section class="about flex-column" id="about">
+    <div class="intro">
       <h1 class="event-name">Luminora '25</h1>
-    </sec>
+    </div>
+    <section id="about" name="about" class="section-about">
+      <p class="section-title section-title-1">Welcome to Luminora '25</p>
+      <div class="section-content about-content">
+        <p class="event-description poppins-regular">
+          Luminora '25. An exciting and a memorable Prefects' Day celebration at
+          your Maris Stella College Negombo! featuring the leadership,
+          dedication, and contributions of the prefects, showcasing their
+          journey and achievements. Expect a day filled with vibrant activities,
+          inspiring speeches, creative performances, and moments of camaraderie,
+          all reflecting the theme of unity and excellence. It’s an opportunity
+          to celebrate the spirit of leadership and create lasting memories.
+        </p>
+        <hr />
+        <div class="event-info">
+          <span class="event-info-bg-element"></span>
+          <div class="info-container">
+            <img
+              class="event-info-icon"
+              src="./PUBLIC/ICONS/calender.svg"
+              alt="Calender"
+            />
+            <p class="event-info-text">October 26<sup>th</sup></p>
+          </div>
+          <div class="info-container">
+            <img
+              class="event-info-icon"
+              src="./PUBLIC/ICONS/clock.svg"
+              alt="Calender"
+            />
+            <p class="event-info-text">5.00 pm</p>
+          </div>
+          <div class="info-container">
+            <img
+              class="event-info-icon"
+              src="./PUBLIC/ICONS/location.svg"
+              alt="Calender"
+            />
+            <p class="event-info-text">College Grounds</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sponsors" name="Sponsors" class="section-sponsors">
+      <p class="section-title section-title-2">SPONSORS</p>
+      <div class="section-content sponsor-content-wrapper">
+        <div class="sponsor-wrapper">
+          <h3 class="sponsor-pckg-title">Title Sponsor</h3>
+          <div class="title-card sponsor-card">
+            <div class="sponsor-icon" alt="Sponsor Image"></div>
+            <p class="sponsor-name">Sponsor Name</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="map" name="map" class="section-map">
+      <p class="section-title section-title-3">EVENT MAP</p>
+      <div class="vertical-map-wrapper">
+        <img src="/Public/map_v.jpeg" alt="Map" />
+      </div>
+      <div class="horizontal-map-wrapper">
+        <img src="/Public/map_h.jpeg" alt="Map" />
+      </div>
+    </section> -->
+    <section id="contact" name="contact" class="section-contact">
+      <p class="section-title section-title-6">CONTACT US</p>
+      <div class="section-content contact-section-content">
+        <div class="flex-column contact-option-wrapper">
+          <div class="contact-options flex-row">
+            <div class="contact-option-card contact-card-1 flex-column">
+              <h1 class="poppins-regular contact-option-title">Event</h1>
+              <div class="contact-card-wrapper-1">
+                <img
+                  class="contact-option-icon"
+                  src="./PUBLIC/ICONS/eventcontact.svg"
+                  alt="Event"
+                />
+                <p class="poppins-regular contact-option-text">
+                  Call for more information.
+                </p>
+                <a class="contact-card-link" href="tel:+94 77 135 5779"
+                  >&#9432; <br />
+                  More Information</a
+                >
+              </div>
+            </div>
+            <div class="contact-option-card contact-card-1 flex-column">
+              <h1 class="poppins-regular contact-option-title">Tickets</h1>
+              <div class="contact-card-wrapper-1">
+                <img
+                  class="contact-option-icon"
+                  src="./PUBLIC/ICONS/ticket.svg"
+                  alt="Event"
+                />
+                <p class="poppins-regular contact-option-text">
+                  Call for reservation
+                </p>
+                <a class="contact-card-link" href="tel:+94 70 331 2939"
+                  >&#9432; <br />
+                  More Information</a
+                >
+              </div>
+            </div>
+            <div class="contact-option-card contact-card-1 flex-column">
+              <h1 class="poppins-regular contact-option-title">Sponsorships</h1>
+              <div class="contact-card-wrapper-1">
+                <img
+                  class="contact-option-icon"
+                  src="./PUBLIC/ICONS/sponsor.svg"
+                  alt="Event"
+                />
+                <p class="poppins-regular contact-option-text">
+                  Call for more information.
+                </p>
+                <a class="contact-card-link" href="tel:+94 74 306 7885"
+                  >&#9432; <br />
+                  More Information</a
+                >
+              </div>
+            </div>
+            <div class="contact-option-card contact-card-1 flex-column">
+              <h1 class="poppins-regular contact-option-title">Stalls</h1>
+              <div class="contact-card-wrapper-1">
+                <img
+                  class="contact-option-icon"
+                  src="./PUBLIC/ICONS/stall.svg"
+                  alt="Event"
+                />
+                <p class="poppins-regular contact-option-text">
+                  Call for more information.
+                </p>
+                <a class="contact-card-link" href="tel:+94 77 869 0150"
+                  >&#9432; <br />
+                  More Information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-section" id="feedback">
+      <div class="contact-form-wrapper" id="Form-window">
+        <h1 class="poppins-regular contact-form-title">
+          Give us your Feedback!
+        </h1>
+
+        <form
+          class="contact-form flex-column"
+          netlify
+          name="Feedback"
+          method="POST"
+          data-netlify="true"
+          action="/Index.html"
+        >
+          <div class="flex-column form-element-wrapper">
+            <label for="name" class="form-label">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="Name"
+              class="poppins-regular contact-form-input"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="flex-column form-element-wrapper">
+            <label for="email" class="form-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="Email"
+              class="poppins-regular contact-form-input"
+              placeholder="johndoe@example.com"
+              required
+            />
+          </div>
+          <div class="flex-column form-element-wrapper">
+            <label for="tel" class="form-label">Telephone</label>
+            <input
+              id="telephone"
+              type="tel"
+              name="Tel"
+              class="poppins-regular contact-form-input"
+              placeholder="+94 xx xxx xxxx"
+              required
+            />
+          </div>
+          <div class="flex-column form-element-wrapper">
+            <label for="messege " class="form-label">Messege </label>
+            <textarea
+              id="Messege"
+              name="Messege"
+              class="poppins-regular contact-form-input"
+              placeholder="Type in your messege..."
+              required
+            ></textarea>
+          </div>
+          <button class="poppins-regular contact-form-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="footer" id="footer">
+      <footer class="flex-row">
+        <div class="footer-div footer-div-1 flex-row">
+          <h2 class="name-footer poppins-regular">
+            <a href="/index.html" class="footer-link">MSCPA</a>
+          </h2>
+        </div>
+        <div class="footer-div footer-div-2 flex-column poppins-light">
+          <div class="footer-div-2-inner-1"></div>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#" class="footer-link">Sponsors</a>
+          <a href="#" class="footer-link">Feedback </a>
+          <a href="#" class="footer-link">Map</a>
+        </div>
+        <div class="footer-div-2-inner-2">
+          <p class="copyright">All rights Reserved by MSCPA© 2025</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
