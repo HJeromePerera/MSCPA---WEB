@@ -1,0 +1,34 @@
+@keyframes luminoraanim {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+  }
+  to {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes luminorashadow {
+  0% {
+    filter: drop-shadow(#ffd700 0pt 0pt 60pt);
+  }
+  50% {
+    filter: drop-shadow(rgba(11, 50, 178, 0.679) 0pt 0pt 100pt);
+  }
+  100% {
+    filter: drop-shadow(#ffd700 0pt 0pt 60pt);
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    filter: blur(0.4rem) invert(1);
+    transform: scale(0.8) rotateX(40deg);
+  }
+  to {
+    filter: blur(0rem) invert(0);
+    transform: scale(1) rotateX(0deg);
+    opacity: 1;
+  }
+}

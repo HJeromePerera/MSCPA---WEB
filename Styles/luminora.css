@@ -1,14 +1,30 @@
 :root {
   background-color: #000b16;
+  background-image: linear-gradient(
+    to right,
+    #0b0026,
+    #050324,
+    #020621,
+    #00081e,
+    #000a1b,
+    #000a1b,
+    #000a1b,
+    #000a1b,
+    #00081e,
+    #020621,
+    #050324,
+    #0b0026
+  );
   font-family: "Arcane Nine";
   overflow-x: hidden;
   overflow-y: scroll;
   user-select: none;
+  animation: backgrounder 15s infinite;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 hr {
@@ -35,14 +51,6 @@ header {
   border-radius: 12pt;
   border: rgba(238, 238, 238, 0.126) solid 1px;
 }
-
-/* .header-div {
-  background-color: #25252534;
-  border-radius: 12pt;
-  backdrop-filter: blur(2rem);
-  align-items: center;
-  justify-content: space-evenly;
-} */
 
 .header-div-1 {
   align-items: center;
@@ -98,6 +106,14 @@ header {
   -webkit-text-fill-color: transparent;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  animation-name: luminoraanim;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+.name-anim {
+  animation: luminorashadow 10s ease-in 0s infinite;
 }
 
 /* ///////////////////////////// */
@@ -116,7 +132,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -128,19 +144,6 @@ header {
   height: 60%;
 }
 
-@keyframes reveal {
-  from {
-    opacity: 0;
-    filter: blur(0.4rem) invert(1);
-    transform: scale(0.8) rotateX(40deg);
-  }
-  to {
-    filter: blur(0rem) invert(0);
-    transform: scale(1) rotateX(0deg);
-    opacity: 1;
-  }
-}
-
 section {
   animation: auto linear reveal both;
   animation-timeline: view();
@@ -150,6 +153,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 4vh;
 }
 
 .section-title {
@@ -161,6 +165,7 @@ section {
   background-clip: text;
   filter: drop-shadow(#ffd9004e 0px 0px 30px);
   margin-bottom: 0%;
+  font-family: "arcane nine";
 }
 
 .section-content {
@@ -181,23 +186,6 @@ section {
   flex-direction: row;
   border-radius: 12pt;
   justify-content: space-around;
-}
-
-.slider-skew {
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: red;
-  border: #eee solid 1px;
-  transform: skew(-30deg);
-  padding: 4vw;
-  width: 20%;
-  height: 30%;
-  z-index: -2;
-  position: absolute;
 }
 
 .slider-content-1 {
@@ -232,43 +220,6 @@ section {
   -webkit-text-fill-color: transparent;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-}
-
-.slider-para {
-  text-wrap: wrap;
-  width: 80%;
-  text-align: center;
-}
-
-.slider-image {
-  width: 25vw;
-  aspect-ratio: 1/1;
-  border-radius: 20pt;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: #3b3b3b41 0pt 0px 12px;
-  border: #ffd9004e solid 1px;
-}
-
-.slider-image-1 {
-  background: url(./PUBLIC/food.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.slider-image-2 {
-  background: url(./PUBLIC/live-music.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.slider-image-3 {
-  background: url(./PUBLIC/arcade.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .event-info {
@@ -367,21 +318,6 @@ section {
 .title-sponsor-1 {
   background-image: url(https://www.maxies.lk/wp-content/uploads/2023/01/22dfe37d-maxies-e1674456888986.png);
 }
-.media-sponsor-1 {
-  background-image: url(./PUBLIC/SPONSORS/Sun\ FM\ New.png);
-}
-
-.platinum-sponsor-1 {
-  background-image: url(./PUBLIC/SPONSORS/prima.svg);
-}
-
-.silver-sponsor-1 {
-  background-image: url(./PUBLIC/SPONSORS/JE.png);
-}
-
-.silver-sponsor-2 {
-  background-image: url(./PUBLIC/SPONSORS/Dimo-logo-1.png);
-}
 
 .sponsor-names-content {
   display: flex;
@@ -414,7 +350,6 @@ section {
 
 .contact-options {
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 10;
@@ -422,7 +357,12 @@ section {
 
 .contact-option-title {
   margin: 0%;
-  font-size: 15pt;
+  font-size: 13pt;
+}
+
+.section-description {
+  color: #bfbfbf;
+  margin-top: 0;
 }
 
 .contact-option-card {
@@ -430,11 +370,11 @@ section {
   border-radius: 12px;
   padding: 2vw;
   background-color: #3b3b3b41;
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(23rem);
   background-color: rgba(175, 175, 175, 0.124);
   border: #eeeeee14 solid 1px;
   box-shadow: #000000 1px 1px 10px;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   margin: 2vw;
   min-width: 10vw;
@@ -444,28 +384,30 @@ section {
 .contact-card-wrapper-1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   width: 100%;
   height: auto;
-  padding: 1vw;
+  transition: all 0.5s;
+  padding-top: 8vh;
 }
 
-.contact-option-icon {
-  width: 30%;
-  height: auto;
-  padding: 2vw;
+.contact-option-card:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 
 .contact-option-text {
-  text-align: center;
+  text-align: left;
+  font-size: 10pt;
+  margin-top: 0;
 }
 
 .contact-card-link {
-  color: #ffd900b3;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1px;
+  color: #9c8200;
 }
 
 #Form-window {
@@ -553,23 +495,19 @@ section {
   box-shadow: #ffd900 1px 1px 10px;
   transition: all 0.5s;
 }
-
+/* 
 footer {
   height: 20vh;
+  width: 100%;
   padding: 2vw 10vh 2vw 1vh;
-  background: linear-gradient(
-    45deg,
-    #000,
-    #ffd700,
-    #000,
-    #ffd700,
-    #000,
-    #ffd700,
-    #000,
-    #ffd700
-  );
-  justify-content: left;
+  justify-content: space-between;
   align-items: top;
+}
+
+.footer-div-main {
+  background-color: red;
+  align-items: top;
+  justify-content: space-between;
 }
 
 .footer-div {
@@ -579,5 +517,99 @@ footer {
 .footer-div-2 {
   width: max-content;
   padding-left: 2vw;
-  padding-right: 2vw;
+  padding-right: 4vw;
+}
+
+.footer-div-3 {
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  font-family: "poppins", Courier, monospace;
+  color: #eeeeee7a;
+} */
+
+.footer {
+  width: 100%;
+  background: #000616;
+  border-radius: 6px;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489c6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+.footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
+.logo {
+  width: 5vw;
 }

@@ -1,0 +1,9 @@
+.particle-1 {
+  background-color: #ffd700;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  filter: drop-shadow(#ffd700 0px 0px 10px) blur(0.1rem);
+  z-index: 0;
+}

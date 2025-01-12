@@ -8,28 +8,43 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./../Styles/particles.scss" />
     <link rel="stylesheet" href="./../Styles/root.css" />
     <link rel="stylesheet" href="./../Styles/luminora.css" />
+    <link rel="stylesheet" href="./../Animations/particles.css" />
+    <link rel="stylesheet" href="./../Animations/animations.css" />
     <link rel="stylesheet" href="./Public/Arcane Nine.otf" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
     <title>Luminora '25 | MSCPA</title>
   </head>
   <body>
+    <div class="particle-1"></div>
     <header class="flex-row">
       <div class="header-div header-div-1 flex-row">
         <h2 class="name poppins-regular">
-          <a href="/index.html" class="header-link">MSCPA</a>
+          <a href="./../index.html" class="header-link">MSCPA</a>
         </h2>
       </div>
       <div class="header-div header-div-2 flex-row poppins-light">
         <a href="#about" class="header-link">About</a>
-        <a href="#" class="header-link">Sponsors</a>
-        <a href="#" class="header-link">Feedback </a>
-        <a href="#" class="header-link">Map</a>
+        <!-- <a href="#" class="header-link">Sponsors</a> -->
+        <!-- <a href="#" class="header-link">Map</a> -->
+        <a href="#feedback" class="header-link">Feedback </a>
       </div>
     </header>
     <div class="intro">
-      <h1 class="event-name">Luminora '25</h1>
+      <h1 class="event-name name-anim">Luminora '25</h1>
+      <p class="section-description poppins-regular">
+        Prefects' Day of Mais Stella College Negombo.
+      </p>
+      <div class="intro-wrapper"></div>
     </div>
     <section id="about" name="about" class="section-about">
       <p class="section-title section-title-1">Welcome to Luminora '25</p>
@@ -43,37 +58,55 @@
           all reflecting the theme of unity and excellence. It’s an opportunity
           to celebrate the spirit of leadership and create lasting memories.
         </p>
-        <hr />
-        <div class="event-info">
+        <br /><br />
+        <div class="event-info poppins-medium">
           <span class="event-info-bg-element"></span>
           <div class="info-container">
-            <img
-              class="event-info-icon"
-              src="./PUBLIC/ICONS/calender.svg"
-              alt="Calender"
-            />
-            <p class="event-info-text">October 26<sup>th</sup></p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M580-240q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"
+              />
+            </svg>
+            <p class="event-info-text">January 25<sup>th</sup></p>
           </div>
           <div class="info-container">
-            <img
-              class="event-info-icon"
-              src="./PUBLIC/ICONS/clock.svg"
-              alt="Calender"
-            />
-            <p class="event-info-text">5.00 pm</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"
+              />
+            </svg>
+            <p class="event-info-text">7.00 am</p>
           </div>
           <div class="info-container">
-            <img
-              class="event-info-icon"
-              src="./PUBLIC/ICONS/location.svg"
-              alt="Calender"
-            />
-            <p class="event-info-text">College Grounds</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+              />
+            </svg>
+            <p class="event-info-text">College Premises</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="sponsors" name="Sponsors" class="section-sponsors">
+    <!-- <section id="sponsors" name="Sponsors" class="section-sponsors">
       <p class="section-title section-title-2">SPONSORS</p>
       <div class="section-content sponsor-content-wrapper">
         <div class="sponsor-wrapper">
@@ -84,7 +117,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- <section id="map" name="map" class="section-map">
       <p class="section-title section-title-3">EVENT MAP</p>
       <div class="vertical-map-wrapper">
@@ -96,74 +129,112 @@
     </section> -->
     <section id="contact" name="contact" class="section-contact">
       <p class="section-title section-title-6">CONTACT US</p>
+
+      <p class="section-description poppins-light">
+        Let us know how we can help.
+      </p>
       <div class="section-content contact-section-content">
         <div class="flex-column contact-option-wrapper">
           <div class="contact-options flex-row">
             <div class="contact-option-card contact-card-1 flex-column">
-              <h1 class="poppins-regular contact-option-title">Event</h1>
-              <div class="contact-card-wrapper-1">
-                <img
-                  class="contact-option-icon"
-                  src="./PUBLIC/ICONS/eventcontact.svg"
-                  alt="Event"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="28px"
+                viewBox="0 -960 960 960"
+                width="28px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
                 />
-                <p class="poppins-regular contact-option-text">
-                  Call for more information.
+              </svg>
+              <div class="contact-card-wrapper-1">
+                <h1 class="poppins-regular contact-option-title">
+                  Sumedha Appuhamy
+                </h1>
+                <p class="poppins-extralight contact-option-text">
+                  Master-In-Charge
                 </p>
-                <a class="contact-card-link" href="tel:+94 77 135 5779"
-                  >&#9432; <br />
-                  More Information</a
+                <a
+                  class="contact-card-link poppins-regular"
+                  href="tel:+94 77 135 5779"
+                  >+94 77 135 5779</a
                 >
               </div>
             </div>
             <div class="contact-option-card contact-card-1 flex-column">
-              <h1 class="poppins-regular contact-option-title">Tickets</h1>
-              <div class="contact-card-wrapper-1">
-                <img
-                  class="contact-option-icon"
-                  src="./PUBLIC/ICONS/ticket.svg"
-                  alt="Event"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="28px"
+                viewBox="0 -960 960 960"
+                width="28px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
                 />
-                <p class="poppins-regular contact-option-text">
-                  Call for reservation
+              </svg>
+              <div class="contact-card-wrapper-1">
+                <h1 class="poppins-regular contact-option-title">
+                  Ruvinda Rangay
+                </h1>
+                <p class="poppins-extralight contact-option-text">
+                  Head Prefect
                 </p>
-                <a class="contact-card-link" href="tel:+94 70 331 2939"
-                  >&#9432; <br />
-                  More Information</a
+                <a
+                  class="contact-card-link poppins-regular"
+                  href="tel:+94 77 135 5779"
+                  >+94 77 135 5779</a
                 >
               </div>
             </div>
             <div class="contact-option-card contact-card-1 flex-column">
-              <h1 class="poppins-regular contact-option-title">Sponsorships</h1>
-              <div class="contact-card-wrapper-1">
-                <img
-                  class="contact-option-icon"
-                  src="./PUBLIC/ICONS/sponsor.svg"
-                  alt="Event"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="28px"
+                viewBox="0 -960 960 960"
+                width="28px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
                 />
-                <p class="poppins-regular contact-option-text">
-                  Call for more information.
+              </svg>
+              <div class="contact-card-wrapper-1">
+                <h1 class="poppins-regular contact-option-title">
+                  Dulaj De Silva
+                </h1>
+                <p class="poppins-extralight contact-option-text">
+                  Deputy Head Prefect
                 </p>
-                <a class="contact-card-link" href="tel:+94 74 306 7885"
-                  >&#9432; <br />
-                  More Information</a
+                <a
+                  class="contact-card-link poppins-regular"
+                  href="tel:+94 77 135 5779"
+                  >+94 77 135 5779</a
                 >
               </div>
             </div>
             <div class="contact-option-card contact-card-1 flex-column">
-              <h1 class="poppins-regular contact-option-title">Stalls</h1>
-              <div class="contact-card-wrapper-1">
-                <img
-                  class="contact-option-icon"
-                  src="./PUBLIC/ICONS/stall.svg"
-                  alt="Event"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
                 />
-                <p class="poppins-regular contact-option-text">
-                  Call for more information.
+              </svg>
+              <div class="contact-card-wrapper-1">
+                <h1 class="poppins-regular contact-option-title">Email</h1>
+                <p class="poppins-extralight contact-option-text">
+                  Write to us.
                 </p>
-                <a class="contact-card-link" href="tel:+94 77 869 0150"
-                  >&#9432; <br />
-                  More Information</a
+                <a
+                  class="contact-card-link poppins-regular"
+                  href="mailto: mscpanego@gmail.com"
+                  >Click here</a
                 >
               </div>
             </div>
@@ -171,12 +242,12 @@
         </div>
       </div>
     </section>
-    <section class="feedback-section" id="feedback">
+    <section class="feedback-section poppins-regular" id="feedback">
+      <p class="section-title section-title-1">Feedback</p>
       <div class="contact-form-wrapper" id="Form-window">
         <h1 class="poppins-regular contact-form-title">
           Give us your Feedback!
         </h1>
-
         <form
           class="contact-form flex-column"
           netlify
@@ -232,24 +303,74 @@
         </form>
       </div>
     </section>
+    <br /><br /><br />
     <div class="footer" id="footer">
-      <footer class="flex-row">
-        <div class="footer-div footer-div-1 flex-row">
-          <h2 class="name-footer poppins-regular">
-            <a href="/index.html" class="footer-link">MSCPA</a>
-          </h2>
-        </div>
-        <div class="footer-div footer-div-2 flex-column poppins-light">
-          <div class="footer-div-2-inner-1"></div>
-          <a href="#about" class="footer-link">About</a>
-          <a href="#" class="footer-link">Sponsors</a>
-          <a href="#" class="footer-link">Feedback </a>
-          <a href="#" class="footer-link">Map</a>
-        </div>
-        <div class="footer-div-2-inner-2">
-          <p class="copyright">All rights Reserved by MSCPA© 2025</p>
+      <!-- FOOTER -->
+      <footer class="footer poppins-regular">
+        <div class="footer-row">
+          <div class="footer-col">
+            <img src="./../Public/PREFECTLOGO.png" alt="logo" class="logo" />
+            <h2 class="header-link name">MSCPA</h2>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Free Designs</a></li>
+              <li><a href="#">Latest Designs</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">Popular Designs</a></li>
+              <li><a href="#">Art Skills</a></li>
+              <li><a href="#">New Uploads</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for news, updates.</p>
+            <form id="Newsletter-Input" action="#">
+              <input type="email" placeholder="Your email" required />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
         </div>
       </footer>
+
+      <!-- <footer class="flex-column">
+        <div class="footer-div-main flex-row">
+          <div class="footer-div footer-div-1 flex-row">
+            <h2 class="name-footer poppins-regular">
+              <a href="/index.html" class="footer-link">MSCPA</a>
+            </h2>
+          </div>
+          <div class="footer-div footer-div-2 flex-column poppins-light">
+            <a href="#about" class="footer-link">About</a>
+            <a href="#" class="footer-link">Sponsors</a>
+            <a href="#" class="footer-link">Feedback </a>
+            <a href="#" class="footer-link">Map</a>
+          </div>
+          <div class="footer-div"></div>
+          <div class="footer-div"></div>
+        </div>
+        <div class="footer-div-3">
+          <p class="copyright">All rights Reserved by MSCPA© 2025</p>
+        </div>
+      </footer> -->
     </div>
   </body>
+  <script src="./../Animations/particle.js"></script>
 </html>
