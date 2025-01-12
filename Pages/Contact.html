@@ -29,7 +29,7 @@
         <a href="./About.html" class="header-link">About Us</a>
         <a href="./Events.html" class="header-link">Events</a>
         <a href="./Contact.html" class="header-link active-link">Contact Us</a>
-        <a href="./Feedback.html" class="header-link">Feedback </a>
+        <a href="./Contact.html#feedback" class="header-link">Feedback </a>
         <a href="#" class="header-link"> </a>
         <a
           href="./../events/luminora.html"
@@ -159,6 +159,66 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="feedback-section poppins-regular" id="feedback">
+      <div class="contact-form-wrapper" id="Form-window">
+        <h1 class="poppins-regular contact-form-title">
+          Give us your Feedback.
+        </h1>
+        <form
+          class="contact-form flex-column"
+          netlify
+          name="Contact"
+          method="POST"
+          data-netlify="true"
+          action="./Contact.html"
+        >
+          <div class="flex-column form-element-wrapper">
+            <label for="name" class="form-label">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="Name"
+              class="poppins-regular contact-form-input"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="flex-column form-element-wrapper">
+            <label for="email" class="form-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="Email"
+              class="poppins-regular contact-form-input"
+              placeholder="johndoe@example.com"
+              required
+            />
+          </div>
+          <div class="flex-column form-element-wrapper">
+            <label for="tel" class="form-label">Telephone</label>
+            <input
+              id="telephone"
+              type="tel"
+              name="Tel"
+              class="poppins-regular contact-form-input"
+              placeholder="+94 xx xxx xxxx"
+              required
+            />
+          </div>
+          <div class="flex-column form-element-wrapper">
+            <label for="messege " class="form-label">Messege </label>
+            <textarea
+              id="Messege"
+              name="Messege"
+              class="poppins-regular contact-form-input"
+              placeholder="Type in your messege..."
+              required
+            ></textarea>
+          </div>
+          <button class="poppins-regular contact-form-btn">Submit</button>
+        </form>
       </div>
     </section>
 
