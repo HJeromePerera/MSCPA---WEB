@@ -4,6 +4,8 @@
   transition: all 0.5s;
   height: 100%;
   width: 100%;
+  font-family: "poppins";
+  user-select: none;
 }
 * {
   scroll-behavior: smooth;
