@@ -1,0 +1,139 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 50%;
+  max-height: auto;
+  align-items: center;
+  padding-bottom: 6vh;
+  animation: auto linear revealnorm both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 25%;
+}
+
+.intro-div {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 8vh;
+  padding: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-title {
+  font-size: 5rem;
+}
+
+.navigation-guide {
+  margin-top: -5vh;
+}
+
+.intro-para {
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-para p {
+  font-size: 1.5vh;
+  width: 30%;
+  text-align: center;
+}
+
+.learn-more-btn {
+  background-color: darkred;
+  padding: 1.3vh 2vw 1.3vh 2vw;
+  border-radius: 5pt;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: wheat;
+}
+
+.learn-more-btn:hover {
+  background-color: rgb(107, 1, 1);
+  transition: all 0.5s;
+}
+
+.contact-component {
+  align-items: center;
+  justify-content: center;
+}
+
+.events-covered {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding-bottom: 0;
+}
+
+.event-container {
+  width: 99%;
+  height: 40vh;
+  overflow-y: hidden;
+  overflow-x: unset;
+  box-shadow: inset #00000d 0px 0px 30px;
+}
+
+.event-card {
+  margin: 2vh;
+  background-color: #00000d;
+  background: url("./../Public/pic-placeholder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 40%;
+  max-height: 100%;
+  border-radius: 12px;
+  filter: drop-shadow(#000 0px 0px 10px);
+  padding: 2vh;
+}
+
+.event-card h2 {
+  position: relative;
+  top: 80%;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.event-card-learn-more-btn {
+  font-size: 2vh;
+  background-color: rgba(139, 0, 0, 0.39);
+  border: darkred solid 1px;
+  padding: 1vh 2vw;
+  border-radius: 12px;
+  text-decoration: none;
+  color: antiquewhite;
+  margin-bottom: 10vh;
+  transition: all 0.5s;
+  backdrop-filter: blur(1rem);
+}
+
+.event-card-learn-more-btn:hover {
+  background-color: rgb(107, 1, 1);
+  transition: all 0.5s;
+}
+
+.coming-soon {
+  backdrop-filter: blur(1rem);
+  position: absolute;
+  margin: 0;
+  color: lightgreen;
+  background-color: rgba(144, 238, 144, 0.202);
+  width: fit-content;
+  padding: 0.5vh 0.5vw;
+  border: rgba(144, 238, 144, 0.659) solid 1px;
+  filter: drop-shadow(rgba(144, 238, 144, 0.324) 0px 0px 2px);
+  border-radius: 5pt;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
