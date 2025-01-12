@@ -136,3 +136,19 @@ section {
 .hidden {
   display: none;
 }
+
+.event-card-luminora {
+  background-color: #00000d;
+  background: url("./../Public/luminora-event.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-card-feedfire24 {
+  background-color: #00000d;
+  background: url("./../Public/feedfire24-event.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
