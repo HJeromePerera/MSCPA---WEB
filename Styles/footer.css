@@ -1,81 +1,132 @@
-.footer {
-  width: 100%;
-  background: #000616;
-  border-radius: 6px;
+footer {
+  background-color: #00020f;
+  padding: 20px 15px;
 }
-.footer .footer-row {
-  display: flex;
-  flex-wrap: wrap;
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .main-content-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 3.5rem;
-  padding: 60px;
+  grid-gap: 20px;
 }
-.footer-row .footer-col h4 {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
+footer .main-content-area .holder h3 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  margin: 0;
 }
-.footer-col .links {
-  margin-top: 20px;
+footer .main-content-area .holder ul {
+  padding: 0;
 }
-.footer-col .links li {
+footer .main-content-area .holder ul li {
   list-style: none;
-  margin-bottom: 10px;
 }
-.footer-col .links li a {
+footer .main-content-area .holder ul li a {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #b6c7d6;
   text-decoration: none;
-  color: #bfbfbf;
+  text-transform: capitalize;
+  padding: 0.3rem 0;
+  display: inline-block;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.footer-col .links li a:hover {
-  color: #fff;
+footer .main-content-area .holder ul li a:hover {
+  text-decoration: underline;
+  color: #95ecec;
 }
-.footer-col p {
-  margin: 20px 0;
-  color: #bfbfbf;
-  max-width: 300px;
+footer .social-media-links {
+  position: relative;
+  margin-top: 60px;
+  filter: invert(1);
 }
-.footer-col form {
+footer .social-media-links ul {
+  max-width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.footer-col input {
-  height: 40px;
-  border-radius: 6px;
-  background: none;
-  width: 100%;
-  outline: none;
-  border: 1px solid #7489c6;
-  caret-color: #fff;
-  color: #fff;
-  padding-left: 10px;
+footer .social-media-links ul::before {
+  width: 25%;
+  opacity: 50%;
+  position: absolute;
+  content: "";
+  border-top: 1px solid #000;
+  top: 50%;
+  left: 0;
 }
-.footer-col input::placeholder {
-  color: #ccc;
+footer .social-media-links ul::after {
+  width: 25%;
+  opacity: 50%;
+  position: absolute;
+  content: "";
+  border-top: 1px solid #000;
+  top: 50%;
+  right: 0;
 }
-.footer-col form button {
-  background: #fff;
-  outline: none;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.2s ease;
+footer .social-media-links ul li {
+  list-style: none;
 }
-.footer-col form button:hover {
-  background: #cecccc;
+footer .social-media-links ul li a img {
+  max-width: 20px;
 }
-.footer-col .icons {
+@media (min-width: 768px) {
+  footer .social-media-links ul li a img {
+    max-width: 30px;
+  }
+}
+footer .copyright {
+  font-family: "poppins";
+  font-weight: 200;
+  margin-top: 45px;
+  text-align: center;
+}
+footer .copyright img {
+  max-width: 200px;
+}
+footer .copyright p {
+  color: #b6c7d6;
+  font-size: 0.9em;
+}
+footer .copyright ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
-  gap: 30px;
-  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.footer-col .icons i {
-  color: #afb6c7;
+footer .copyright ul li {
+  list-style: none;
 }
-.footer-col .icons i:hover {
-  color: #fff;
+footer .copyright ul li a {
+  color: #ffffff;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  margin-right: 20px;
+}
+footer .copyright ul li a:hover {
+  color: #95ecec;
+  text-decoration: none;
 }
 
 .footer-link:hover {
@@ -83,4 +134,31 @@
   transition: all 0.5s;
   font-weight: 600;
   filter: drop-shadow(rgba(255, 255, 255, 0.505) 0pt 0pt 10pt);
+}
+
+.association-logo {
+  filter: invert(1);
+  width: 2.8vw;
+}
+
+.college-logo {
+  filter: invert(0);
+  width: 4vw;
+}
+
+.logo-sep {
+  width: 1px;
+  height: 3vh;
+}
+
+.to-top {
+  animation: auto linear reveal both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  filter: invert(1);
+  margin-top: -5vh;
 }

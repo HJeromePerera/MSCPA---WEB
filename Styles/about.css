@@ -1,0 +1,145 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 50%;
+  max-height: auto;
+  align-items: center;
+  padding-bottom: 6vh;
+  animation: auto linear revealnorm both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 25%;
+}
+
+.intro-div {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 8vh;
+  padding: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-title {
+  font-size: 5rem;
+}
+
+.navigation-guide {
+  margin-top: -5vh;
+}
+
+.intro-para {
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-para p {
+  font-size: 1.5vh;
+  width: 30%;
+  text-align: center;
+}
+
+.learn-more-btn {
+  background-color: darkred;
+  padding: 1.3vh 2vw 1.3vh 2vw;
+  border-radius: 5pt;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: wheat;
+}
+
+.learn-more-btn:hover {
+  background-color: rgb(107, 1, 1);
+  transition: all 0.5s;
+}
+
+.vision {
+  width: 100%;
+  height: 0%;
+  align-items: start;
+}
+
+.vision-image {
+  width: 80%;
+  height: 50vh;
+  aspect-ratio: 1/1;
+  background-color: black;
+  margin-left: -20vw;
+  background-image: url("./../Public/pic-placeholder.jpg");
+  background-blend-mode: screen;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+
+.vision-wrapper {
+  padding: 2vw;
+  align-items: start;
+  justify-content: start;
+  width: auto;
+  height: max-content;
+  margin-left: -5vw;
+}
+
+.vision-title {
+  margin-left: -3vw;
+  font-size: 4vh;
+  color: crimson;
+  filter: drop-shadow(crimson 0px 0px 50px);
+}
+
+.vision-text {
+  font-size: 2vh;
+  width: 20vw;
+  text-wrap: wrap;
+}
+
+.mission {
+  width: 100%;
+  height: 0%;
+  align-items: start;
+}
+
+.mission-image {
+  width: 80%;
+  height: 50vh;
+  aspect-ratio: 1/1;
+  background-color: black;
+  margin-right: -20vw;
+  background-image: url("./../Public/pic-placeholder.jpg");
+  background-blend-mode: screen;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+  transform: rotateX(180deg);
+}
+
+.mission-wrapper {
+  padding: 2vw;
+  align-items: end;
+  justify-content: end;
+  width: auto;
+  height: max-content;
+  margin-left: -5vw;
+}
+
+.mission-title {
+  margin-right: -4vw;
+  font-size: 4vh;
+  color: crimson;
+  filter: drop-shadow(crimson 0px 0px 50px);
+}
+
+.mission-text {
+  font-size: 2vh;
+  width: 20vw;
+  text-align: right;
+  text-wrap: wrap;
+}

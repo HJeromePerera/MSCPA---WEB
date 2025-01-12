@@ -44,3 +44,15 @@
     opacity: 1;
   }
 }
+@keyframes revealnorm {
+  from {
+    opacity: 0;
+    filter: blur(0.4rem);
+    transform: scale(0.9);
+  }
+  to {
+    filter: blur(0rem);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
