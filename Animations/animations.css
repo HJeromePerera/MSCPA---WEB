@@ -1,3 +1,15 @@
+@keyframes nameAnim {
+  0% {
+    filter: drop-shadow(rgba(255, 255, 255, 0.585) 0pt 0pt 20pt);
+  }
+  50% {
+    filter: drop-shadow(rgba(83, 83, 83, 0.286) 0pt 0pt 10pt);
+  }
+  100% {
+    filter: drop-shadow(rgba(255, 255, 255, 0.627) 0pt 0pt 20pt);
+  }
+}
+
 @keyframes luminoraanim {
   from {
     opacity: 0;

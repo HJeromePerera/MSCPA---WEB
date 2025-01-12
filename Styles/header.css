@@ -1,0 +1,63 @@
+header {
+  width: 80%;
+  height: 8%;
+  left: 10%;
+  justify-content: space-between;
+  z-index: 10;
+  position: fixed;
+  background-color: #25252534;
+  backdrop-filter: blur(2rem);
+  border-radius: 12pt;
+  border: rgba(238, 238, 238, 0.126) solid 1px;
+}
+
+.header-div-1 {
+  align-items: center;
+  justify-content: center;
+  min-width: 20%;
+}
+
+.header-div-2 {
+  width: 40%;
+  padding-left: 50pt;
+  padding-right: 50pt;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-link {
+  padding-left: 3%;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: grey;
+}
+
+.header-link:hover {
+  color: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  filter: drop-shadow(rgb(255, 255, 255) 0pt 0pt 10pt);
+}
+
+.active-link {
+  color: white;
+  font-weight: 600;
+}
+
+.header-link-luminora {
+  background: linear-gradient(45deg, #9c8200, #ffd700, #b49902, #f6edbe);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Arcane Nine";
+}
+
+.header-link-luminora:hover {
+  background: linear-gradient(90deg, #9c8200, #ffd700, #b49902, #f6edbe);
+  font-weight: 500;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(#ffd700 0pt 0pt 10pt);
+}
