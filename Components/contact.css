@@ -1,0 +1,33 @@
+.component-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #07071e;
+  border: #131313 solid 1px;
+
+  width: 40vw;
+  border-radius: 5pt;
+  padding: 5vh 1vw 5vh 1vw;
+  filter: drop-shadow(#000 0px 0px 20px);
+}
+
+.component-contact-title {
+  color: white;
+  font-size: 3vh;
+}
+
+.component-contact-btn {
+  background-color: darkred;
+  border: rgb(169, 5, 5) solid 1px;
+
+  padding: 1.3vh 2vw 1.3vh 2vw;
+  border-radius: 5pt;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: wheat;
+}
+
+.component-contact-btn:hover {
+  background-color: rgb(107, 1, 1);
+  transition: all 0.5s;
+}

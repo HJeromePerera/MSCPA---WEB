@@ -143,3 +143,8 @@ section {
   text-align: right;
   text-wrap: wrap;
 }
+
+.contact-component {
+  align-items: center;
+  justify-content: center;
+}
