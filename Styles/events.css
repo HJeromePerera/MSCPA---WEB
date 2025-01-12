@@ -75,7 +75,6 @@ section {
   height: 40vh;
   overflow-y: hidden;
   overflow-x: unset;
-  box-shadow: inset #00000d 0px 0px 30px;
 }
 
 .event-card {
