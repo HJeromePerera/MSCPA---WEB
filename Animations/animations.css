@@ -44,6 +44,7 @@
     opacity: 1;
   }
 }
+
 @keyframes revealnorm {
   from {
     opacity: 0;

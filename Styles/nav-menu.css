@@ -1,0 +1,106 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #00000d;
+  top: 0%;
+  left: 0%;
+  z-index: 25;
+  transition: all 1s;
+}
+
+.menu-pattern {
+  position: absolute;
+  opacity: 10%;
+  z-index: -1;
+}
+
+.menu-open-anim {
+  animation: menuOpen 0.5s ease-in 1;
+}
+
+.menu-close-anim {
+  animation: menuClose 0.5s ease-in 1;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  left: 96.5%;
+  padding-top: 1.5vh;
+  cursor: pointer;
+}
+
+.menu-links {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-link {
+  font-size: 2vh;
+  padding: 1.2%;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: grey;
+}
+
+.menu-link:hover {
+  color: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  filter: drop-shadow(rgb(255, 255, 255) 0pt 0pt 10pt);
+}
+
+.active-link {
+  color: white;
+  font-weight: 600;
+}
+
+.menu-link-luminora {
+  background: linear-gradient(45deg, #9c8200, #ffd700, #b49902, #f6edbe);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Arcane Nine";
+}
+
+.menu-link-luminora:hover {
+  background: linear-gradient(90deg, #9c8200, #ffd700, #b49902, #f6edbe);
+  font-weight: 500;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(#ffd700 0pt 0pt 10pt);
+}
+
+.open-menu-btn-anim {
+  transition: all 0.5s;
+  transform: scaleY(0);
+}
+
+.close-menu-btn-anim {
+  transition: all 0.5s;
+}
+
+@keyframes menuOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menuClose {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}

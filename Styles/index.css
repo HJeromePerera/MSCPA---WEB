@@ -17,7 +17,7 @@ section {
 }
 
 .landing-image {
-  background-image: url(./../Public/pic-placeholder.jpg);
+  background-image: url(./../Public/Backgrounds/Chapel.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,6 @@ section {
   width: 100%;
   filter: blur(2rem);
 }
-
 .welcome {
   font-size: 4vw;
   width: 50%;
@@ -38,12 +37,10 @@ section {
   text-align: center;
   filter: drop-shadow(black 0px 0px 20px);
 }
-
 .contact-component {
   align-items: center;
   justify-content: center;
 }
-
 .intro {
   display: flex;
   flex-direction: column;
@@ -57,7 +54,6 @@ section {
   width: 50%;
   text-align: center;
 }
-
 .welcome-text {
   width: 40%;
   text-align: center;
