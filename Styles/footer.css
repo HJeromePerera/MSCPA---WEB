@@ -1,6 +1,8 @@
 footer {
   background-color: #000315;
   padding: 20px 15px;
+  background-image: url(./../Public/Backgrounds/nnnoise.svg);
+  background-blend-mode: color-burn;
 }
 
 footer .container {
@@ -134,6 +136,11 @@ footer .copyright ul li a:hover {
   transition: all 0.5s;
   font-weight: 600;
   filter: drop-shadow(rgba(255, 255, 255, 0.505) 0pt 0pt 10pt);
+}
+
+.Logos {
+  align-items: center;
+  justify-content: center;
 }
 
 .association-logo {
