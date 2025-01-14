@@ -52,8 +52,8 @@ section {
     border-top: darkred solid 1px;
     border-top-width: 0.1rem;
     box-shadow: darkred 0px -10px 15px -10px;
-    font-size: 1rem;
-    width: 30%;
+    font-size: 4vw;
+    width: 80%;
     text-align: center;
   }
 
@@ -106,12 +106,13 @@ section {
     font-size: 4vh;
     color: crimson;
     filter: drop-shadow(crimson 0px 0px 50px);
+    text-wrap: wrap;
     -webkit-filter: drop-shadow(crimson 0px 0px 50px);
   }
 
   .vision-text {
     font-size: 2vh;
-    width: 30vw;
+    width: 40vw;
     text-wrap: wrap;
   }
 
@@ -148,16 +149,18 @@ section {
   }
 
   .mission-title {
-    font-size: 2rem;
+    font-size: 4vh;
     text-align: left;
     color: crimson;
     filter: drop-shadow(crimson 0px 0px 50px);
     -webkit-filter: drop-shadow(crimson 0px 0px 50px);
+    text-wrap: wrap;
+    width: 30%;
   }
 
   .mission-text {
-    font-size: 1rem;
-    width: 30vw;
+    font-size: 2vh;
+    width: 50%;
     text-wrap: wrap;
     text-align: right;
   }
