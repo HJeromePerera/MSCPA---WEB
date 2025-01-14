@@ -174,9 +174,12 @@ section {
   border: solid 1px crimson;
   border-radius: 12px;
   padding: 2vw;
-  background-color: #3b3b3b41;
-  background-color: rgba(175, 175, 175, 0.124);
+  background-color: #eeeeee41;
   border: #eeeeee14 solid 1px;
+  background: url("./../Public/Backgrounds/texture.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
   box-shadow: #000000 1px 1px 10px;
   align-items: left;
   justify-content: space-between;
