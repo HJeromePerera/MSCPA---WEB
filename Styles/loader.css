@@ -3,11 +3,12 @@
   width: 100%;
   height: 100%;
   background-color: #00000d;
-  animation: spin 1s linear infinite;
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  animation: hider 1s ease-out 4000ms;
+  -webkit-animation: hider 1s ease-out 4000ms;
 }
 
 .center {
@@ -29,10 +30,15 @@
   background-clip: text;
   color: transparent;
   font-family: "lemon milk";
-  font-size: 10vw;
+  font-size: 11vw;
   animation: reveal 3000ms ease-in-out forwards 200ms,
-    glow 2500ms linear 1 2000ms;
+    glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+  -webkit-animation: r duretion timing-function delay iteration-count direction
+    fill-mode;
+  animation: r duretion timing-function delay iteration-count direction
+    fill-mode;
 }
+
 @keyframes reveal {
   80% {
     letter-spacing: 8px;
@@ -41,8 +47,30 @@
     background-size: 300% 300%;
   }
 }
+
+@keyframes revealer {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    letter-spacing: 12px;
+  }
+}
+
 @keyframes glow {
   30% {
-    text-shadow: 0 0 10px #f59292;
+    text-shadow: 0 0 10px #ffffff;
+  }
+}
+
+@keyframes hider {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
   }
 }
