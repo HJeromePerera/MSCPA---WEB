@@ -74,10 +74,9 @@ section {
   }
 
   .event-container {
-    width: 99%;
+    width: auto;
     height: 300px;
     overflow-y: hidden;
-    overflow-x: unset;
   }
 
   .event-card {
@@ -213,7 +212,7 @@ section {
   }
 
   .event-container {
-    width: 99%;
+    width: auto;
     height: 40vh;
     overflow-y: hidden;
     overflow-x: unset;

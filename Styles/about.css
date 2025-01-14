@@ -14,134 +14,292 @@ section {
   animation: auto linear revealnorm both;
   animation-timeline: view();
   animation-range: entry 10% cover 25%;
+  -webkit-animation: auto linear revealnorm both;
 }
 
-.intro-div {
-  width: fit-content;
-  height: fit-content;
-  margin-top: 8vh;
-  padding: 2vw;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 600px) {
 }
 
-.intro-title {
-  font-size: 5rem;
+@media screen and (max-width: 768px) {
+  .intro-div {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-title {
+    font-size: 5rem;
+    margin-top: -4rem;
+    filter: drop-shadow(black 0px 0px 10px);
+    -webkit-filter: drop-shadow(black 0px 0px 10px);
+  }
+
+  .navigation-guide {
+    margin-top: -5vh;
+    filter: drop-shadow(black 0px 0px 4px);
+    -webkit-filter: drop-shadow(black 0px 0px 4px);
+  }
+
+  .intro-para {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-para p {
+    margin-top: 3rem;
+    padding-top: 2vh;
+    border-top: darkred solid 1px;
+    border-top-width: 0.1rem;
+    box-shadow: darkred 0px -10px 15px -10px;
+    font-size: 1rem;
+    width: 30%;
+    text-align: center;
+  }
+
+  .learn-more-btn {
+    background-color: darkred;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    border-radius: 5pt;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: wheat;
+  }
+
+  .learn-more-btn:hover {
+    background-color: rgb(107, 1, 1);
+    transition: all 0.5s;
+  }
+
+  .vision {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .vision-image {
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+    aspect-ratio: 2/1.5;
+    background-color: black;
+    background-image: url("./../Public/Backgrounds/Vision.jpeg");
+    box-shadow: #525252 0px 0px 10pt;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+  }
+
+  .vision-wrapper {
+    align-items: start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+  }
+
+  .vision-title {
+    font-size: 4vh;
+    color: crimson;
+    filter: drop-shadow(crimson 0px 0px 50px);
+    -webkit-filter: drop-shadow(crimson 0px 0px 50px);
+  }
+
+  .vision-text {
+    font-size: 2vh;
+    width: 30vw;
+    text-wrap: wrap;
+  }
+
+  .mission {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .mission-image {
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+    aspect-ratio: 2/1.5;
+    background-color: black;
+    background-image: url("./../Public/Backgrounds/Mission.jpeg");
+    box-shadow: #525252 0px 0px 10pt;
+    background-blend-mode: screen;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+  }
+
+  .mission-wrapper {
+    align-items: start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+    flex-direction: row-reverse;
+  }
+
+  .mission-title {
+    font-size: 2rem;
+    text-align: left;
+    color: crimson;
+    filter: drop-shadow(crimson 0px 0px 50px);
+    -webkit-filter: drop-shadow(crimson 0px 0px 50px);
+  }
+
+  .mission-text {
+    font-size: 1rem;
+    width: 30vw;
+    text-wrap: wrap;
+    text-align: right;
+  }
 }
 
-.navigation-guide {
-  margin-top: -5vh;
-}
+@media screen and (min-width: 768px) {
+  .intro-div {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
 
-.intro-para {
-  align-items: center;
-  justify-content: center;
-}
+  .intro-title {
+    font-size: 5rem;
+    margin-top: -4rem;
+    filter: drop-shadow(black 0px 0px 10px);
+    -webkit-filter: drop-shadow(black 0px 0px 10px);
+  }
 
-.intro-para p {
-  font-size: 1.5vh;
-  width: 30%;
-  text-align: center;
-}
+  .navigation-guide {
+    margin-top: -5vh;
+    filter: drop-shadow(black 0px 0px 4px);
+    -webkit-filter: drop-shadow(black 0px 0px 4px);
+  }
 
-.learn-more-btn {
-  background-color: darkred;
-  padding: 1.3vh 2vw 1.3vh 2vw;
-  border-radius: 5pt;
-  transition: all 0.5s;
-  text-decoration: none;
-  color: wheat;
-}
+  .intro-para {
+    align-items: center;
+    justify-content: center;
+  }
 
-.learn-more-btn:hover {
-  background-color: rgb(107, 1, 1);
-  transition: all 0.5s;
-}
+  .intro-para p {
+    margin-top: 3rem;
+    padding-top: 2vh;
+    border-top: darkred solid 1px;
+    border-top-width: 0.1rem;
+    box-shadow: darkred 0px -10px 15px -10px;
+    font-size: 1rem;
+    width: 30%;
+    text-align: center;
+  }
 
-.vision {
-  width: 100%;
-  height: 0%;
-  align-items: start;
-}
+  .learn-more-btn {
+    background-color: darkred;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    border-radius: 5pt;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: wheat;
+  }
 
-.vision-image {
-  width: 80%;
-  height: 50vh;
-  aspect-ratio: 1/1;
-  background-color: black;
-  margin-left: -20vw;
-  background-image: url("./../Public/pic-placeholder.jpg");
-  background-blend-mode: screen;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
-}
+  .learn-more-btn:hover {
+    background-color: rgb(107, 1, 1);
+    transition: all 0.5s;
+  }
 
-.vision-wrapper {
-  padding: 2vw;
-  align-items: start;
-  justify-content: start;
-  width: auto;
-  height: max-content;
-  margin-left: -5vw;
-}
+  .vision {
+    width: 100%;
+    height: 0%;
+    align-items: start;
+  }
 
-.vision-title {
-  margin-left: -3vw;
-  font-size: 4vh;
-  color: crimson;
-  filter: drop-shadow(crimson 0px 0px 50px);
-}
+  .vision-image {
+    border-radius: 0px 20px 20px 0px;
+    width: 60%;
+    height: 50vh;
+    background-color: black;
+    background-image: url("./../Public/Backgrounds/Vision.jpeg");
+    background-position: centers;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 0px 20px 20px 0px;
+    -moz-border-radius: 0px 20px 20px 0px;
+    -ms-border-radius: 0px 20px 20px 0px;
+    -o-border-radius: 0px 20px 20px 0px;
+  }
 
-.vision-text {
-  font-size: 2vh;
-  width: 20vw;
-  text-wrap: wrap;
-}
+  .vision-wrapper {
+    padding: 2vw;
+    align-items: start;
+    justify-content: start;
+    width: auto;
+    height: max-content;
+  }
 
-.mission {
-  width: 100%;
-  height: 0%;
-  align-items: start;
-}
+  .vision-title {
+    font-size: 4vh;
+    color: crimson;
+    filter: drop-shadow(crimson 0px 0px 50px);
+    -webkit-filter: drop-shadow(crimson 0px 0px 50px);
+  }
 
-.mission-image {
-  width: 80%;
-  height: 50vh;
-  aspect-ratio: 1/1;
-  background-color: black;
-  margin-right: -20vw;
-  background-image: url("./../Public/pic-placeholder.jpg");
-  background-blend-mode: screen;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
-  transform: rotateX(180deg);
-}
+  .vision-text {
+    font-size: 2vh;
+    width: 30vw;
+    text-wrap: wrap;
+  }
 
-.mission-wrapper {
-  padding: 2vw;
-  align-items: end;
-  justify-content: end;
-  width: auto;
-  height: max-content;
-  margin-left: -5vw;
-}
+  .mission {
+    width: 100%;
+    height: 0%;
+    align-items: start;
+  }
 
-.mission-title {
-  margin-right: -4vw;
-  font-size: 4vh;
-  color: crimson;
-  filter: drop-shadow(crimson 0px 0px 50px);
-}
+  .mission-image {
+    border-radius: 20px 0px 0px 20px;
+    width: 60%;
+    height: 50vh;
+    aspect-ratio: 1/1;
+    background-color: black;
+    background-image: url("./../Public/Backgrounds/Mission.jpeg");
+    background-blend-mode: screen;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px;
+    -ms-border-radius: 20px 0px 0px 20px;
+    -o-border-radius: 20px 0px 0px 20px;
+  }
 
-.mission-text {
-  font-size: 2vh;
-  width: 20vw;
-  text-align: right;
-  text-wrap: wrap;
+  .mission-wrapper {
+    padding: 2vw;
+    align-items: end;
+    justify-content: end;
+    width: auto;
+    height: max-content;
+  }
+
+  .mission-title {
+    font-size: 4vh;
+    color: crimson;
+    filter: drop-shadow(crimson 0px 0px 50px);
+    -webkit-filter: drop-shadow(crimson 0px 0px 50px);
+  }
+
+  .mission-text {
+    font-size: 2vh;
+    width: 30vw;
+    text-align: right;
+    text-wrap: wrap;
+  }
 }
 
 .contact-component {
@@ -149,67 +307,13 @@ section {
   justify-content: center;
 }
 
-.section-contact {
-  min-height: 20vh;
-}
-
-.contact-options {
-  justify-content: space-between;
-  flex-wrap: wrap;
+.landing-image {
+  background-image: url(./../Public/Backgrounds/Group\ Photo.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #00000d;
+  height: 100vh;
   width: 100%;
-  height: 10;
-}
-
-.contact-option-title {
-  margin: 0%;
-  font-size: 13pt;
-}
-
-.section-description {
-  color: #bfbfbf;
   margin-top: 0;
-}
-
-.contact-option-card {
-  border: solid 1px #ffd900;
-  border-radius: 12px;
-  padding: 2vw;
-  background-color: #3b3b3b41;
-  background-color: rgba(175, 175, 175, 0.124);
-  border: #eeeeee14 solid 1px;
-  box-shadow: #000000 1px 1px 10px;
-  align-items: left;
-  justify-content: space-between;
-  margin: 2vw;
-  min-width: 10vw;
-  max-width: 12vw;
-}
-
-.contact-card-wrapper-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  transition: all 0.5s;
-  padding-top: 8vh;
-}
-
-.contact-option-card:hover {
-  transform: scale(1.05);
-  transition: all 0.5s;
-}
-
-.contact-option-text {
-  text-align: left;
-  font-size: 10pt;
-  margin-top: 0;
-}
-
-.contact-card-link {
-  text-decoration: none;
-  text-align: left;
-  letter-spacing: 1px;
-  color: #9c8200;
 }
