@@ -1,65 +1,139 @@
-@import url(./../Public/LEMONMILK-Regular.otf);
-#loader {
-  width: 100%;
-  height: 100%;
-  background-color: #00000d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: spin 1s linear infinite;
-  animation: hider 1s ease-out 4000ms;
-  -webkit-animation: hider 1s ease-out 4000ms;
+@media screen and (max-width: 600px) {
+  #loader {
+    width: 100%;
+    height: 100%;
+    background-color: #00000d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: hider 1s ease-out 4000ms;
+    -webkit-animation: hider 1s ease-out 4200ms;
+  }
+
+  .center {
+    position: fixed;
+    z-index: 30;
+    margin: 0;
+  }
+
+  #loader p {
+    background: 50% 100% / 50% 50% no-repeat
+      radial-gradient(
+        ellipse at bottom,
+        #fff,
+        transparent,
+        transparent,
+        transparent
+      );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-family: "LEMONMILK-Regular";
+    font-size: 1rem;
+    word-wrap: break-word;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+      glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+      glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+  }
 }
 
-.center {
-  position: fixed;
-  z-index: 30;
-  margin: 0;
+@media screen and (max-width: 768px) {
+  #loader {
+    width: 100%;
+    height: 100%;
+    background-color: #00000d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: hider 1s ease-out 4000ms;
+    -webkit-animation: hider 1s ease-out 4200ms;
+  }
+
+  .center {
+    position: fixed;
+    z-index: 30;
+    margin: 0;
+  }
+
+  #loader p {
+    background: 50% 100% / 50% 50% no-repeat
+      radial-gradient(
+        ellipse at bottom,
+        #fff,
+        transparent,
+        transparent,
+        transparent
+      );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+    font-family: "LEMONMILK-Regular";
+    font-size: 2rem;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+      glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+      glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+  }
 }
 
-#loader p {
-  background: 50% 100% / 50% 50% no-repeat
-    radial-gradient(
-      ellipse at bottom,
-      #fff,
-      transparent,
-      transparent,
-      transparent
-    );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-family: "lemon milk";
-  font-size: 11vw;
-  animation: reveal 3000ms ease-in-out forwards 200ms,
-    glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
-  -webkit-animation: r duretion timing-function delay iteration-count direction
-    fill-mode;
-  animation: r duretion timing-function delay iteration-count direction
-    fill-mode;
+@media screen and (min-width: 769px) {
+  #loader {
+    width: 100%;
+    height: 100%;
+    background-color: #00000d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: hider 1s ease-out 4000ms;
+    -webkit-animation: hider 1s ease-out 4200ms;
+  }
+
+  .center {
+    position: fixed;
+    z-index: 30;
+    margin: 0;
+  }
+
+  #loader p {
+    background: 50% 100% / 50% 50% no-repeat
+      radial-gradient(
+        ellipse at bottom,
+        #fff,
+        transparent,
+        transparent,
+        transparent
+      );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+    font-family: "LEMONMILK-Regular";
+    font-size: 5vh;
+    word-wrap: break-word;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+      glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+      glow 2500ms linear 1 2000ms, revealer 0.5s ease-in backwards;
+  }
 }
 
 @keyframes reveal {
   80% {
-    letter-spacing: 8px;
+    letter-spacing: 2px;
   }
   100% {
     background-size: 300% 300%;
   }
 }
 
-@keyframes revealer {
-  80% {
-    letter-spacing: 8px;
-  }
-  100% {
-    letter-spacing: 12px;
-  }
-}
-
 @keyframes glow {
   30% {
-    text-shadow: 0 0 10px #ffffff;
+    text-shadow: 0 0 5px #ffffff;
   }
 }
 

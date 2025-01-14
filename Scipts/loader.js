@@ -1,6 +1,7 @@
 const loadermanager = () => {
   setTimeout(() => {
-    document.querySelector("#loader").style.display = "none";
+    // document.querySelector(".loader").classList.add("hidden");
+    document.querySelector(".loader").style.display = "none";
   }, 4500);
 };
 
