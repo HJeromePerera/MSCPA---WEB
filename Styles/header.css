@@ -9,6 +9,7 @@
     background-color: #25252534;
     border: #25252573 solid 1px;
     backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
     animation: auto linear header both;
     animation-timeline: scroll();
     animation-range: entry 10% cover 25%;
