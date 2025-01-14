@@ -1,3 +1,97 @@
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .welcome {
+    display: none;
+  }
+
+  .welcome-small {
+    font-size: 3rem;
+    text-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    filter: drop-shadow(black 0px 0px 10px);
+    -webkit-filter: drop-shadow(black 0px 0px 10px);
+  }
+
+  .intro-welcome {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 1;
+  }
+
+  .small-text {
+    font-size: 1.5rem;
+  }
+  .welcome-text {
+    width: 90%;
+    text-align: center;
+    font-size: 1.5vh;
+  }
+}
+
+/* Medium */
+@media screen and (max-width: 768px) {
+  .welcome {
+    font-size: 2rem;
+    width: 50%;
+    text-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    filter: drop-shadow(black 0px 0px 20px);
+  }
+  .intro-welcome {
+    font-size: 3vh;
+    width: 50%;
+    text-align: center;
+  }
+
+  .small-text {
+    font-size: 1rem;
+  }
+  .welcome-text {
+    width: 60%;
+    text-align: center;
+    font-size: 1.5vh;
+  }
+}
+
+/* Large */
+@media screen and (min-width: 769px) {
+  .welcome {
+    font-size: 4vw;
+    display: flex;
+    width: 50%;
+    text-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    filter: drop-shadow(black 0px 0px 20px);
+  }
+  .intro-welcome {
+    font-size: 3vh;
+    width: 50%;
+    text-align: center;
+  }
+  .welcome-small {
+    display: none;
+  }
+  .small-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .welcome-text {
+    width: 40%;
+    text-align: center;
+    font-size: 1.5vh;
+  }
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -17,7 +111,7 @@ section {
 }
 
 .landing-image {
-  background-image: url(./../Public/Backgrounds/Chapel.jpeg);
+  background-image: url(./../Public/Backgrounds/Seniors.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,37 +121,17 @@ section {
   width: 100%;
   filter: blur(2rem);
 }
-.welcome {
-  font-size: 4vw;
-  width: 50%;
-  text-wrap: wrap;
-  position: absolute;
-  top: 30%;
-  left: 25%;
-  text-align: center;
-  filter: drop-shadow(black 0px 0px 20px);
-}
 .contact-component {
   align-items: center;
   justify-content: center;
   margin: 0;
   height: 40vh;
 }
+
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 3vh;
-}
-
-.intro-welcome {
-  font-size: 3vh;
-  width: 50%;
-  text-align: center;
-}
-.welcome-text {
-  width: 40%;
-  text-align: center;
-  font-size: 1.5vh;
 }
