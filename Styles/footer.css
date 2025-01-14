@@ -414,7 +414,6 @@
   flex-direction: row;
   align-items: end;
   justify-content: end;
-  filter: invert(1);
   margin-top: -5vh;
   padding-right: 1rem;
   padding-bottom: 1rem;
