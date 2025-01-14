@@ -40,7 +40,7 @@
   }
 
   .menu-link {
-    font-size: 2vh;
+    font-size: 1rem;
     padding: 1.2%;
     text-decoration: none;
     transition: all 0.5s;
@@ -155,7 +155,7 @@
   }
 
   .menu-link {
-    font-size: 2vh;
+    font-size: 1rem;
     padding: 1.2%;
     text-decoration: none;
     transition: all 0.5s;
@@ -252,6 +252,7 @@
 
   .menu-close-anim {
     animation: menuClose 0.5s ease-in 1;
+    -webkit-animation: menuClose 0.5s ease-in 1;
   }
 
   .close-btn {
@@ -269,7 +270,7 @@
   }
 
   .menu-link {
-    font-size: 2vh;
+    font-size: 1rem;
     padding: 1.2%;
     text-decoration: none;
     transition: all 0.5s;

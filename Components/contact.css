@@ -19,14 +19,14 @@
 
   .component-contact-title {
     color: white;
-    font-size: 1pt;
+    font-size: 1rem;
     text-align: center;
   }
 
   .component-contact-btn {
     background-color: darkred;
     border: rgb(169, 5, 5) solid 1px;
-    padding: 1.3vh 2vw 1.3vh 2vw;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 5pt;
     font-size: 1rem;
     transition: all 0.5s;
@@ -61,7 +61,7 @@
   .component-contact-btn {
     background-color: darkred;
     border: rgb(169, 5, 5) solid 1px;
-    padding: 1.3vh 2vw 1.3vh 2vw;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 5pt;
     font-size: 1rem;
     transition: all 0.5s;
@@ -88,14 +88,14 @@
 
   .component-contact-title {
     color: rgb(182, 182, 182);
-    font-size: 3vh;
+    font-size: 2rem;
     text-align: center;
   }
 
   .component-contact-btn {
     background-color: darkred;
     border: rgb(169, 5, 5) solid 1px;
-    padding: 1.3vh 2vw 1.3vh 2vw;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 5pt;
     transition: all 0.5s;
     text-decoration: none;
