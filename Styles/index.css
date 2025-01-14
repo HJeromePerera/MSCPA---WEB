@@ -116,11 +116,10 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #00000d;
-  box-shadow: inset #00000d 0px 0px 100px;
   height: 100vh;
   width: 100%;
-  filter: blur(2rem);
 }
+
 .contact-component {
   align-items: center;
   justify-content: center;
