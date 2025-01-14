@@ -1,0 +1,48 @@
+@import url(./../Public/LEMONMILK-Regular.otf);
+#loader {
+  width: 100%;
+  height: 100%;
+  background-color: #00000d;
+  animation: spin 1s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: spin 1s linear infinite;
+}
+
+.center {
+  position: fixed;
+  z-index: 30;
+  margin: 0;
+}
+
+#loader p {
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(
+      ellipse at bottom,
+      #fff,
+      transparent,
+      transparent,
+      transparent
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "lemon milk";
+  font-size: 10vw;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear 1 2000ms;
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  30% {
+    text-shadow: 0 0 10px #f59292;
+  }
+}
