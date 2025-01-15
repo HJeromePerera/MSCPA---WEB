@@ -66,7 +66,8 @@ section {
   }
 
   .former-principals,
-  .former-mic {
+  .former-mic,
+  .former-hps {
     width: 80%;
     margin-left: 10%;
     align-items: start;
@@ -80,16 +81,36 @@ section {
     box-shadow: darkred 0px 10px 35px -10px;
   }
 
-  .former-principals-ul {
+  .former-principals-ul,
+  .former-mic-ul,
+  .former-hps-ul {
     list-style: square;
   }
 
   .former-principal-li,
-  .former-mic-li {
+  .former-mic-li,
+  .former-hp-li {
     margin-top: 0.5rem;
   }
 
-  /* <span class="present-tag"> Present </span> */
+  .former-hp-tbl {
+    width: 50%;
+  }
+
+  .hp-tbl-row {
+    height: 1.7rem;
+    text-align: left;
+  }
+
+  .column-year {
+    width: fit-content;
+  }
+
+  .column-hp,
+  .column-dhp {
+    min-width: 30%;
+    width: fit-content;
+  }
   .present-tag {
     color: turquoise;
     font-size: 0.7rem;
