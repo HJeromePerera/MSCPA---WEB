@@ -125,7 +125,7 @@ section {
 }
 
 .landing-image {
-  background-image: url(./../Public/Backgrounds/Group\ Photo.jpeg);
+  background-image: url(./../Public/Backgrounds/Chapel.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,4 +133,6 @@ section {
   height: 100vh;
   width: 100%;
   margin-top: 0;
+  filter: saturate(-2) brightness(3);
+  -webkit-filter: saturate(-2) brightness(3);
 }
