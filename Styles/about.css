@@ -357,6 +357,8 @@ section {
     justify-content: center;
     padding: 1rem;
     z-index: 10;
+    backdrop-filter: blur(10rem);
+    -webkit-backdrop-filter: blur(10rem);
     background-image: linear-gradient(
       to top,
       #0000004f,
@@ -366,8 +368,6 @@ section {
       #28282648
     );
     border: #25252573 solid 1px;
-    backdrop-filter: blur(10rem);
-    -webkit-backdrop-filter: blur(10rem);
     border-radius: 12pt;
     -webkit-border-radius: 12pt;
     -moz-border-radius: 12pt;

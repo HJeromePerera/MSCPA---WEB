@@ -126,8 +126,8 @@ section {
     color: antiquewhite;
     margin-bottom: 10vh;
     transition: all 0.5s;
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(10rem);
+    -webkit-backdrop-filter: blur(10rem);
   }
 
   .event-card-learn-more-btn:hover {
@@ -182,8 +182,6 @@ section {
   position: absolute;
   top: 0;
   object-fit: cover;
-  filter: saturate(2) brightness(1);
-  -webkit-filter: saturate(2) brightness(1);
 }
 
 .edb-aurora {

@@ -276,17 +276,9 @@
   footer .container {
     max-width: 1200px;
     margin: 0 auto;
+    height: fit-content;
   }
-  footer .main-content-area {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(230px, 1fr)) [auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    grid-gap: 20px;
-  }
+
   footer .main-content-area .holder h3 {
     color: #ffffff;
     text-transform: capitalize;
