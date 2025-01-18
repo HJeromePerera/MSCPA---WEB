@@ -17,17 +17,6 @@ section {
   animation-range: entry 10% cover 25%;
 }
 
-.landing-image {
-  background-image: url(https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-6/465788965_1317592966311502_6263783421170317922_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGBI6aYgvHp6nv0LqeggTDBx3K_iRQntsTHcr-JFCe2xBRKCTkGKdDBoDX8xiyV6EQWEWzC2UhNz9cULrdoSoyq&_nc_ohc=EeFtCR3ei6MQ7kNvgEmSthQ&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=ALh9oYCi5X6K_e6dQ9JNCEF&oh=00_AYDb5mJYgUYN1soVR9fP5pRf2u9QiJRI3DeoTMsr6xtiig&oe=678CA56C);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: "";
-  background-color: #00000d;
-  height: 100vh;
-  width: 100%;
-  margin-top: 0;
-}
-
 @media screen and (min-width: 769px) {
   .intro-div {
     width: fit-content;
@@ -68,6 +57,10 @@ section {
     overflow-x: unset;
   }
 
+  .coming-soon-section {
+    margin-top: 30rem;
+  }
+
   .event-card {
     margin: 2vh;
     background-color: #00000d;
@@ -75,11 +68,42 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 711.11px;
     aspect-ratio: 16/9;
     border-radius: 12px;
     filter: drop-shadow(#000 0px 0px 10px);
     padding: 2vh;
+    -webkit-filter: drop-shadow(#000 0px 0px 10px);
+  }
+
+  .event-card-more {
+    margin: 2vh;
+    /* background-color: #00000d; */
+    width: 200px;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    padding: 2vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-card-more p {
+    text-align: center;
+  }
+
+  .event-card-more-icn {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
+
+  .event-card-more-icn:hover {
+    transition: all 0.5s;
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
   }
 
   .event-card h2 {
@@ -87,6 +111,9 @@ section {
     top: 80%;
     justify-content: space-between;
     font-weight: 500;
+    filter: drop-shadow(#000 0px 0px 5px);
+    filter: drop-shadow(#000 0px 0px 5px);
+    -webkit-filter: drop-shadow(#000 0px 0px 5px);
   }
 
   .event-card-learn-more-btn {
@@ -100,6 +127,7 @@ section {
     margin-bottom: 10vh;
     transition: all 0.5s;
     backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
   }
 
   .event-card-learn-more-btn:hover {
@@ -118,9 +146,11 @@ section {
     border: rgba(144, 238, 144, 0.659) solid 1px;
     filter: drop-shadow(rgba(144, 238, 144, 0.324) 0px 0px 2px);
     border-radius: 5pt;
+    -webkit-backdrop-filter: blur(1rem);
+    -webkit-filter: drop-shadow(rgba(144, 238, 144, 0.324) 0px 0px 2px);
   }
 
-  ::-webkit-scrollbar {
+  .event-container::-webkit-scrollbar {
     background-color: transparent;
   }
 
@@ -130,8 +160,8 @@ section {
 
   .event-card-luminora {
     background-color: #00000d;
-    background: url("./../Public/luminora-event.jpeg");
-    background-position: center;
+    background: url("./../Public/Backgrounds/luminora_post_1.png");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -143,4 +173,60 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.landing-vid {
+  height: 100vh;
+  width: 100%;
+  margin-top: -4vh;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  filter: saturate(2) brightness(1);
+  -webkit-filter: saturate(2) brightness(1);
+}
+
+.edb-aurora {
+  background-image: url(https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-6/454567532_1247027046701428_8980725090891822448_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGQ_BMmx1gaUd1aFPO6PYZZsUt1mFFAjISxS3WYUUCMhKyy9R4hQDd_B_WJSq-oQkXawFSpq1QOO32_87w9jJpi&_nc_ohc=54RsENyKQMUQ7kNvgHfsSL_&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=AW2l9gsRkZ7J4V1NuxbubpL&oh=00_AYDRW7MCtjphVBUKzezU-8IV5ux2y2pkRBkOUs63vYec3g&oe=67910773);
+  background-position: top;
+}
+
+.edb-prob-camp-2024 {
+  background-image: url(https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-6/457366208_1264073731663426_913033995233826584_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGKeQNwTaNUWR4vOXALxrlWPuUDC1HJc8k-5QMLUclzybjfP1obVo5xgo_DMBz4vdXpJfhST1_C2IV_G8Ognplw&_nc_ohc=DaESz50TUS0Q7kNvgHtsfb8&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=AvyVWo0lXEVd-F5xLjyr66c&oh=00_AYCPpsQFupv5xMXeq_g8wc8KlAkZOg4ehK9HbvpabNRgGw&oe=679104D5);
+}
+
+.edb-feedfire-23 {
+  background-image: url(https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-6/344562836_246592071257394_5544792400975016993_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFDdLQCu0l5xNIiU8cjggIkr6gkXK7sVeGvqCRcruxV4eiNrpQkZBsfpkzz7t2soY_HiB__HrfZAZROGGcD6bXw&_nc_ohc=uyzMy9HBdNEQ7kNvgGiih51&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=AN4fiAzsZcud8TGxwztSNY2&oh=00_AYBXa7FEXIz9dUcg2Ji0Z2GRlIhUbskTscMlkEO9JSC_-w&oe=67913436);
+  background-position: 10pt;
+}
+
+.edf-bro-linus {
+  background-image: url("https://scontent.fcmb11-2.fna.fbcdn.net/v/t39.30808-6/468402841_1333010908103041_2097212622830305037_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEgTmUBGkzZe0X6TDKzimiFdIyKQHCmjYV0jIpAcKaNuVXRtjZzz0jfunAY4ADUGU_iNUNEm8akEPS9IuF-2l6&_nc_ohc=tBV5k2e5hLQQ7kNvgEqkDLH&_nc_zt=23&_nc_ht=scontent.fcmb11-2.fna&_nc_gid=A0IUZkwnFFLziE7eBHtDdzV&oh=00_AYAzr8D7hZeOnkqZnbL3N28-tg8myHsPjq_Aw9610rpAIQ&oe=679069CD");
+}
+
+.edf-awards-day-24 {
+  background-image: url(https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-6/467673076_1329823178421814_5444054757723334796_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGOUG3WtizVXcRodOWapQ1zfRaGMaoO15p9FoYxqg7XmkkYwSGG3ByoDKWYCbr5JYVCekUIAi_eLrGs9-FVBuZY&_nc_ohc=1cE0KvKVBbwQ7kNvgHB1Bgj&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=ABAf3ltdcb7kOjZQRa9Nnf2&oh=00_AYCEptmtMJH71-oQ9TDeYe5gehtgKsYjyGtB-LLGdTxMBg&oe=67907B3F);
+  background-size: 130%;
+}
+
+.edf-sinhala-day-primary-24 {
+  background-image: url(https://scontent.fcmb11-1.fna.fbcdn.net/v/t39.30808-6/464150096_1311212723616193_7401564090279082470_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGMbFC12uvS6XtywA0xsWLWJ3Ydwi6joFEndh3CLqOgUckyDrb1quQ-5qS1qtXq8TcyK6rK--9bnMtIjlue1J0r&_nc_ohc=5IFfwMIvM1sQ7kNvgE9s64y&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=APljOclRbogLQVn_c9laLO8&oh=00_AYC3GVKuPc66Lb1cr14a0r2K7ccGdHflS_VlhjwGLX-gqA&oe=67907491);
+  background-size: 125%;
+  background-position: top;
+}
+
+.edf-principals-day-2024 {
+  background-image: url(./../Public/avatars/patron.jpg);
+  background-size: 125%;
+  background-position: center;
+}
+
+.edf-childrens-day-2024 {
+  background-image: url(https://scontent.fcmb11-2.fna.fbcdn.net/v/t39.30808-6/463603768_1299741664763299_8234244499554161306_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEkL7gBQNW5nJ4yjenSxcHTxydU4Jq7f8fHJ1Tgmrt_x_TjBo5A4xGSooBVBFwNG5GGJuiq8RqO5AIGH3BN81Rn&_nc_ohc=uHWuli0TsgEQ7kNvgFAvpM6&_nc_zt=23&_nc_ht=scontent.fcmb11-2.fna&_nc_gid=AfKXoWf42qsHoRvVh6Radcv&oh=00_AYAWSpKvC9tEdHwiA0Z1-FgDr2PaxCSQG6Sk0iKttCGFgA&oe=679088D5);
+  background-size: 125%;
+}
+
+.edf-first-holy-communion-2024 {
+  background-image: url(https://scontent.fcmb11-2.fna.fbcdn.net/v/t39.30808-6/453476527_1238995230837943_5434642919261400997_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHsg6hi5PnWm-Oqrha5rsu17tsmcQ5_PePu2yZxDn8944dKWBfu6pFF8-HuxvbKkEwvfJAylZlFLjGBm8Wb3WoJ&_nc_ohc=CB_NQ1DpKtUQ7kNvgEGRP0-&_nc_zt=23&_nc_ht=scontent.fcmb11-2.fna&_nc_gid=AeDjWdABnK-bWkIRZvrKlAy&oh=00_AYDa6xOLezaUl1sa8f5d8mXVb62TKRMp-wYONsqDJWCeGw&oe=67911604);
+  background-size: 125%;
 }

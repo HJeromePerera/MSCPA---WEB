@@ -1,12 +1,15 @@
 @keyframes nameAnim {
   0% {
     filter: drop-shadow(rgba(255, 255, 255, 0.585) 0pt 0pt 20pt);
+    -webkit-filter: drop-shadow(rgba(255, 255, 255, 0.585) 0pt 0pt 20pt);
   }
   50% {
     filter: drop-shadow(rgba(83, 83, 83, 0.286) 0pt 0pt 10pt);
+    -webkit-filter: drop-shadow(rgba(83, 83, 83, 0.286) 0pt 0pt 10pt);
   }
   100% {
     filter: drop-shadow(rgba(255, 255, 255, 0.627) 0pt 0pt 20pt);
+    -webkit-filter: drop-shadow(rgba(255, 255, 255, 0.627) 0pt 0pt 20pt);
   }
 }
 
@@ -14,22 +17,33 @@
   from {
     opacity: 0;
     transform: scale(0.8) translateY(10px);
+    -webkit-transform: scale(0.8) translateY(10px);
+    -moz-transform: scale(0.8) translateY(10px);
+    -ms-transform: scale(0.8) translateY(10px);
+    -o-transform: scale(0.8) translateY(10px);
   }
   to {
     transform: scale(1) translateY(0px);
     opacity: 1;
+    -webkit-transform: scale(1) translateY(0px);
+    -moz-transform: scale(1) translateY(0px);
+    -ms-transform: scale(1) translateY(0px);
+    -o-transform: scale(1) translateY(0px);
   }
 }
 
 @keyframes luminorashadow {
   0% {
     filter: drop-shadow(#ffd700 0pt 0pt 60pt);
+    -webkit-filter: drop-shadow(#ffd700 0pt 0pt 60pt);
   }
   50% {
     filter: drop-shadow(rgba(11, 50, 178, 0.679) 0pt 0pt 100pt);
+    -webkit-filter: drop-shadow(rgba(11, 50, 178, 0.679) 0pt 0pt 100pt);
   }
   100% {
     filter: drop-shadow(#ffd700 0pt 0pt 60pt);
+    -webkit-filter: drop-shadow(#ffd700 0pt 0pt 60pt);
   }
 }
 @keyframes reveal {
@@ -37,11 +51,21 @@
     opacity: 0;
     filter: blur(0.4rem) invert(1);
     transform: scale(0.8) rotateX(40deg);
+    -webkit-filter: blur(0.4rem) invert(1);
+    -webkit-transform: scale(0.8) rotateX(40deg);
+    -moz-transform: scale(0.8) rotateX(40deg);
+    -ms-transform: scale(0.8) rotateX(40deg);
+    -o-transform: scale(0.8) rotateX(40deg);
   }
   to {
     filter: blur(0rem) invert(0);
     transform: scale(1) rotateX(0deg);
     opacity: 1;
+    -webkit-filter: blur(0rem) invert(0);
+    -webkit-transform: scale(1) rotateX(0deg);
+    -moz-transform: scale(1) rotateX(0deg);
+    -ms-transform: scale(1) rotateX(0deg);
+    -o-transform: scale(1) rotateX(0deg);
   }
 }
 
@@ -50,10 +74,42 @@
     opacity: 0;
     filter: blur(0.4rem);
     transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
   }
   to {
     filter: blur(0rem);
     transform: scale(1);
     opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-filter: blur(0rem);
+  }
+}
+
+@keyframes revealcard {
+  from {
+    opacity: 0;
+    filter: blur(4rem);
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-filter: blur(4rem);
+  }
+  to {
+    filter: blur(0rem);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-filter: blur(0rem);
   }
 }
