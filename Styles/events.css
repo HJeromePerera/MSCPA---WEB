@@ -55,6 +55,13 @@ section {
     height: 400px;
     overflow-y: hidden;
     overflow-x: unset;
+    margin-bottom: 2rem;
+  }
+
+  .scroll-for-more {
+    position: relative;
+    left: 90%;
+    margin: 0;
   }
 
   .coming-soon-section {

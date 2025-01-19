@@ -87,7 +87,7 @@
   }
   footer .copyright p {
     color: #b6c7d6;
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
   footer .copyright ul {
     padding: 0;
@@ -229,7 +229,7 @@
   }
   footer .copyright p {
     color: #b6c7d6;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   footer .copyright ul {
     padding: 0;
@@ -363,7 +363,7 @@
   }
   footer .copyright p {
     color: #b6c7d6;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   footer .copyright ul {
     padding: 0;
@@ -406,6 +406,7 @@
   flex-direction: row;
   align-items: end;
   justify-content: end;
+  position: relative;
   margin-top: -5vh;
   padding-right: 1rem;
   padding-bottom: 1rem;
