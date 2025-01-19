@@ -136,9 +136,10 @@ body {
 }
 
 .redirect-mgs {
-  position: absolute;
-  top: 0%;
-  left: 44%;
+  /* position: absolute;
+  top: 0%; */
+  /* left: 44%; */
+  align-self: center;
 }
 
 .dyna {
