@@ -1,0 +1,149 @@
+:root {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  background-image: url(./../Public/Backgrounds/ooorganize.svg),
+    linear-gradient(0deg, #abf8f98a, #a9cee884, #dce4f500, #ffffff00);
+  background-blend-mode: soft;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background-size: 40vw;
+  background-position: center;
+  background-repeat: repeat;
+  width: 90vw;
+  height: 90vh;
+  z-index: -5;
+  box-shadow: inset black 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.bg-cover {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background-size: 40vw;
+  background-position: bottom;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 90vh;
+  z-index: -5;
+  box-shadow: inset black 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-cover {
+  position: absolute;
+  z-index: -5;
+}
+
+.error-code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 54vw;
+  margin-bottom: 80vh;
+  position: relative;
+  top: 0;
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(0deg, #abb5f9eb, #a9cee884, #dce4f526, #ffffff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-name {
+  font-size: 2rem;
+}
+
+.error-message {
+  width: 30rem;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.redirect-btn {
+  background-color: rgb(215, 215, 215);
+  border: white solid 1px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5pt;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: black;
+  width: 7rem;
+  text-align: left;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  box-shadow: rgba(245, 245, 245, 0.255) 0px 0px 10px 0px;
+}
+
+.redirect-btn:hover {
+  background-color: white;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.arrow {
+  padding: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.redirect-btn:hover .arrow {
+  padding-left: 0.5rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.redirect-mgs {
+  position: absolute;
+  top: 0%;
+  left: 44%;
+}
+
+.dyna {
+  margin-left: 2px;
+  font-family: "Courier New", Courier, monospace;
+  color: lime;
+  font-weight: 900;
+}

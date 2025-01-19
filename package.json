@@ -1,0 +1,14 @@
+{
+  "name": "mscpa---web",
+  "version": "1.0.0",
+  "description": "official website of maris stella college prefects asociation",
+  "main": "index.html",
+  "scripts": {
+    "test": "run"
+  },
+  "author": "Jerome Perera",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
