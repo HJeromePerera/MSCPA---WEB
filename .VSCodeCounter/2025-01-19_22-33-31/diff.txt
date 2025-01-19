@@ -1,0 +1,56 @@
+Date : 2025-01-19 22:33:31
+Directory : /Users/jeromeperera/Desktop/MSCPA---WEB
+Total : 20 files,  1260 codes, 4 comments, 97 blanks, all 1361 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          8 |        571 |          3 |         87 |        661 |
+| JSON       |          2 |        343 |          0 |          2 |        345 |
+| HTML       |          7 |        335 |         -1 |          5 |        339 |
+| JavaScript |          2 |         10 |          2 |          3 |         15 |
+| XML        |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                      | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                         |         20 |      1,260 |          4 |         97 |      1,361 |
+| . (Files)                                                                 |          4 |        390 |          0 |          3 |        393 |
+| Components                                                                |          1 |          1 |          0 |          0 |          1 |
+| Pages                                                                     |          3 |        105 |         -1 |          0 |        104 |
+| Public                                                                    |          1 |          1 |          0 |          0 |          1 |
+| Public/Backgrounds                                                        |          1 |          1 |          0 |          0 |          1 |
+| Scipts                                                                    |          2 |         10 |          2 |          3 |         15 |
+| Styles                                                                    |          7 |        570 |          3 |         87 |        660 |
+| templates                                                                 |          2 |        183 |          0 |          4 |        187 |
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                  | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/jeromeperera/Desktop/MSCPA---WEB/451.html                          | HTML       |         32 |          0 |          1 |         33 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Components/contact.css            | CSS        |          1 |          0 |          0 |          1 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Pages/About.html                  | HTML       |         37 |          0 |          0 |         37 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Pages/Events.html                 | HTML       |         75 |         -1 |          0 |         74 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Pages/Prefects_Code.html          | HTML       |         -7 |          0 |          0 |         -7 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Public/Backgrounds/ooorganize.svg | XML        |          1 |          0 |          0 |          1 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Scipts/menu.js                    | JavaScript |          0 |          2 |          0 |          2 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Scipts/redirect.js                | JavaScript |         10 |          0 |          3 |         13 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/451.css                    | CSS        |        133 |          0 |         15 |        148 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/about.css                  | CSS        |          6 |          0 |          0 |          6 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/events.css                 | CSS        |        218 |          2 |         36 |        256 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/footer.css                 | CSS        |         -8 |          0 |          1 |         -7 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/index.css                  | CSS        |          1 |          0 |          0 |          1 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/nav-menu.css               | CSS        |         56 |          0 |         10 |         66 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/Styles/prefects-code.css          | CSS        |        164 |          1 |         25 |        190 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/index.html                        | HTML       |         15 |          0 |          0 |         15 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/package-lock.json                 | JSON       |        329 |          0 |          1 |        330 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/package.json                      | JSON       |         14 |          0 |          1 |         15 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/templates/footer.html             | HTML       |         83 |          0 |          2 |         85 |
+| /Users/jeromeperera/Desktop/MSCPA---WEB/templates/header.html             | HTML       |        100 |          0 |          2 |        102 |
+| Total                                                                     |            |      1,260 |          4 |         97 |      1,361 |
++---------------------------------------------------------------------------+------------+------------+------------+------------+------------+
